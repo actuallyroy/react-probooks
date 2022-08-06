@@ -37,7 +37,7 @@ class BooksApp extends React.Component {
           <div>
             <div className="list-books">
               <div className="list-books-title">
-                <h1>MyReads</h1>
+                <h1>ProBook</h1>
               </div>
               <div className="list-books-content">
                   <BookShelfComponent headline={'Currently Reading'} message={this.state.message} handleChangeShelve={this.handleChangeShelve.bind(this)} books={this.state.books.filter( book => book.shelf === "currentlyReading")} />
