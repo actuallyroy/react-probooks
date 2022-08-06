@@ -39,6 +39,7 @@ class SearchComponent extends Component{
     }
 
     render() {
+        
         return(
             <div>
                 <div className="search-books">
@@ -55,6 +56,7 @@ class SearchComponent extends Component{
                         </div>
                     </div>
                 <div className="search-books-results">
+                    <div>{this.state.displayBooks.length > 0 ? this.state.displayBooks.length + " Books found!!" : ''}</div>
                 <ol className="books-grid">
                 <h2>{this.state.notFound}</h2>
                 { this.state.displayBooks ? 
